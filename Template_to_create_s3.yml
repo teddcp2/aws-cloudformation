@@ -1,0 +1,17 @@
+---
+AWSTemplateFormatVersion: "2010-09-09"
+
+Description: "Demo Template to create s3 "
+
+Resources:
+  DemoS3Bucket:
+    Type: "AWS::S3::Bucket"
+    Properties:
+      AccessControl: PublicRead
+      BucketName: "tedd-non-prod-pdf-bucket"
+Outputs:
+  bucketName:
+    Description: Name of the bucket
+    Value: !Ref "DemoS3Bucket"
+
+
