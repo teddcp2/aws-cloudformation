@@ -1,0 +1,10 @@
+[
+    {
+        "ParameterKey" : "DbName",
+        "ParameterValue" : "tedd-non-prod-db"
+    },
+    {
+        "ParameterKey" : "DbPort",
+        "ParameterValue" : "420"
+    }
+]

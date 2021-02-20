@@ -1,0 +1,23 @@
+---
+AWSTemplateFormatVersion: "2010-09-09"
+
+Description: " Template 1 - Template to create s3 "
+
+Resources:
+  DemoS3Bucket:
+    Type: "AWS::S3::Bucket"
+    Properties:
+      AccessControl: PublicRead
+      BucketName: "tedd-non-prod-bucket"
+
+Outputs:
+  bucketName:
+    Description: Name of the bucket
+    Value: !Ref "DemoS3Bucket"
+
+
+# Creating a stack
+# aws cloudformation create-stack --stack-name Stack-1 --template-body file://Template_to_create_s3_1.yml
+
+# Deleting a stack
+# aws cloudformation delete-stack --stack-name Stack-1
